@@ -1,6 +1,4 @@
 // Código del cuadrado
-console.group("Cuadrados");
-
 function perimetroCuadrado(lado) {
   return lado * 4;
 }
@@ -9,11 +7,7 @@ function areaCuadrado(lado) {
   return lado * lado;
 }
 
-console.groupEnd();
-
 // Código del triángulo
-console.group("Triángulos");
-
 function perimetroTriangulo(lado1, lado2, base) {
   return lado1 + lado2 + base;
 }
@@ -22,11 +16,16 @@ function areaTriangulo(base, altura) {
   return (base * altura) / 2;
 }
 
-console.groupEnd();
+// Código del reto | Triángulo isosceles
+function alturaTriangulo(lado1, lado2, base) {
+  if (lado1 == lado2) {
+    return Math.sqrt(lado1 * lado1 - (base * base) / 4);
+  } else {
+    console.error("Este no es triangulo isosceles");
+  }
+}
 
 // Código del círculo
-console.group("Círculos");
-
 // Diámetro
 function diametroCirculo(radio) {
   return radio * 2;
@@ -34,7 +33,6 @@ function diametroCirculo(radio) {
 
 // PI
 const PI = Math.PI;
-console.log("PI es: " + PI);
 
 // Circunferencia
 function perimetroCirculo(radio) {
@@ -46,8 +44,6 @@ function perimetroCirculo(radio) {
 function areaCirculo(radio) {
   return radio * radio * PI;
 }
-
-console.groupEnd();
 
 // Aquí interactuamos con el HTML
 function calcularPerimetroCuadrado() {
