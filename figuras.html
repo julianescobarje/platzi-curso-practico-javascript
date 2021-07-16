@@ -7,7 +7,59 @@
     <title>Figuras geométricas | Curso Práctico de JavaScript en Platzi</title>
   </head>
   <body>
-    <h1>Figuras geométricas</h1>
+    <header>
+      <h1>Figuras geométricas</h1>
+      <p>Este es el primer taller del curso práctico del JavaScript</p>
+    </header>
+
+    <section>
+      <h2>Calcula el área y perímetro de un cuadrado</h2>
+      <form>
+        <label for="InputCuadrado">
+          Escribe cuánto mide cada lado de tu cuadrado:
+        </label>
+        <input id="InputCuadrado" type="number" />
+        <button type="button" onclick="calcularPerimetroCuadrado()">
+          Calcular el perímetro
+        </button>
+        <button type="button" onclick="calcularAreaCuadrado()">
+          Calcular el área
+        </button>
+      </form>
+    </section>
+
+    <section>
+      <h2>Calcula el área y perímetro de un triángulo</h2>
+      <form>
+        <label for="InputTriangulo">
+          Escribe cuánto mide cada lado de tu triángulo:
+        </label>
+        <input id="InputTriangulo" type="number" />
+        <button type="button" onclick="calcularPerimetroTriangulo()">
+          Calcular el perímetro
+        </button>
+        <button type="button" onclick="calcularAreaTriangulo()">
+          Calcular el área
+        </button>
+      </form>
+    </section>
+
+    <section>
+      <h2>Calcula el área y perímetro de un círculo</h2>
+      <form>
+        <label for="InputCirculo">
+          Escribe cuánto mide cada lado de tu círculo:
+        </label>
+        <input id="InputCirculo" type="number" />
+        <button type="button" onclick="calcularPerimetroCirculo()">
+          Calcular el perímetro
+        </button>
+        <button type="button" onclick="calcularAreaCirculo()">
+          Calcular el área
+        </button>
+      </form>
+    </section>
+
     <script src="./figuras.js"></script>
   </body>
 </html>
